@@ -6,9 +6,12 @@
 //  Copyright © 2015 Samer Rohani. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <UIKit/UIKit.h> 
+#import "YahooSDK.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <YahooSessionDelegate>
+
+@property (strong, nonatomic) YahooSession *session;
 
 
 @end
